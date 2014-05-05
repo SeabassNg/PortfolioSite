@@ -41,6 +41,6 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-div.nav.navRight > li {
+ul.nav.navRight {
     float: right;
 }
