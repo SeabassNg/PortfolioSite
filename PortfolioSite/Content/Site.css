@@ -44,3 +44,12 @@ input[type="checkbox"].input-validation-error {
 ul.nav.navRight {
     float: right;
 }
+
+div.galleryThumbnails {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    cursor: pointer;
+}

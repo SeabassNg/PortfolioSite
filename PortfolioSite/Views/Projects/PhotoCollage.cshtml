@@ -1,0 +1,97 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Classmates Photo - Photo Collage Feature";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    This feature allows users of classmates photos to combine a bunch of their 
+    photos into a photo collage. This feature is built for both desktop and 
+    mobile platforms to use. We support IE 8-11, Firefox, Chrome, and Opera. We
+    also support mobile Safari, mobile Chrome, mobile IE 10 and 11, and AOSP
+    (tested on the Samsung Galaxy 2 and 3 and HTC One). Screenshots are taken
+    from the Pale Moon browser (variation build of Firefox) and Lumia 920's IE 
+    11.
+</p>
+
+<button id="DesktopView" type="button" class="btn btn-default">Desktop</button>
+<button id="MobileView" type="button" class="btn btn-default">Mobile</button>
+<p>
+    To access this features,
+</p>
+<ul class="instructions">
+    <li>
+        Go to <a href="photos.classmates.com">Classmates Photos</a>
+    </li>
+    <li>
+        Log in with facebook account
+    </li>
+    <li class="desktopInstruction">
+        On the top bar, there is an area with your facebook profile picture and
+        your first name. Hover over this area and click on "My Photos." Your
+        Profile Popup should appear like below.
+        <ul class="list-inline gallery-list-modal">
+            <li>
+                <div class="galleryThumbnails" style="background-image: url('@ViewBag.DesktopImagePath/menu.png')" data-toggle="modal" data-img-url="@ViewBag.DesktopImagePath/menu.png" />
+            </li>
+            <li>
+                <div class="galleryThumbnails" style="background-image: url('@ViewBag.DesktopImagePath/photoPopup.png')" data-toggle="modal" data-img-url="@ViewBag.DesktopImagePath/photoPopup.png" />
+            </li>
+        </ul>
+    </li>
+    <li class="mobileInstruction">
+        On the top bar, there is an area with your facebook profile picture and
+        your first name. Hover over this area and click on "My Photos." Your
+        Profile Popup should appear like below.
+        <ul class="list-inline gallery-list-modal">
+            <li>
+                <div class="galleryThumbnails" style="background-image: url('@ViewBag.MobileImagePath/menu.png')" data-toggle="modal" data-img-url="@ViewBag.MobileImagePath/menu.png" />
+            </li>
+            <li>
+                <div class="galleryThumbnails" style="background-image: url('@ViewBag.MobileImagePath/photoPopup.png')" data-toggle="modal" data-img-url="@ViewBag.MobileImagePath/photoPopup.png" />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Click on the "Add Photo" button on the menu and the popup below should
+        appear
+        <ul class="list-inline gallery-list-modal">
+            <li class="desktopInstruction">
+                <div class="galleryThumbnails" style="background-image: url('@ViewBag.DesktopImagePath/addPhotoPopup.png')" data-toggle="modal" data-img-url="@ViewBag.DesktopImagePath/addPhotoPopup.png" />
+            </li>
+            <li class="mobileInstruction">
+                <div class="galleryThumbnails" style="background-image: url('@ViewBag.MobileImagePath/addPhotoPopup.png')" data-toggle="modal" data-img-url="@ViewBag.MobileImagePath/addPhotoPopup.png" />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Click on Create Collage button and you can play around with this feature.
+    </li>
+</ul>
+<h2>Gallery</h2>
+<ul class="instructions list-inline gallery-list-modal">
+    @foreach (var image in @ViewBag.DesktopGallery)
+    {
+        <li class="desktopInstruction">
+            <div class="galleryThumbnails" style="background-image: url('@ViewBag.DesktopImagePath/@image')" data-toggle="modal" data-img-url="@ViewBag.DesktopImagePath/@image" />
+        </li>
+    }
+    @foreach (var image in @ViewBag.MobileGallery)
+    {
+        <li class="mobileInstruction">
+            <div class="galleryThumbnails" style="background-image: url('@ViewBag.MobileImagePath/@image')" data-toggle="modal" data-img-url="@ViewBag.MobileImagePath/@image" />
+        </li>
+    }
+</ul>
+
+<div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/PhotoCollage")
