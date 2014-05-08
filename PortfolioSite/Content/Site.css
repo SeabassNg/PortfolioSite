@@ -45,6 +45,11 @@ ul.nav.navRight {
     float: right;
 }
 
+ul.gallery-list-modal li {
+    max-width:120px;
+    text-align:center;
+}
+
 div.galleryThumbnails {
     height: 100px;
     width: 100px;
