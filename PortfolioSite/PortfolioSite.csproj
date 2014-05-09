@@ -156,9 +156,6 @@
     <Content Include="Content\bootstrap.css.map">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Index\Thumbs.db" />
-    <Content Include="Images\PhotoCollage\desktop\Thumbs.db" />
-    <Content Include="Images\PhotoCollage\mobile\Thumbs.db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -166,32 +163,84 @@
     <None Include="Scripts\jquery-2.1.0.intellisense.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <Content Include="Images\Index\115A.png" />
-    <Content Include="Images\Index\115B.png" />
-    <Content Include="Images\Index\125A.png" />
-    <Content Include="Images\Index\135A.png" />
-    <Content Include="Images\Index\135B.png" />
-    <Content Include="Images\Index\PhotoCollage.png" />
-    <Content Include="Images\PhotoCollage\desktop\addPhotoPopup.png" />
-    <Content Include="Images\PhotoCollage\desktop\gallery1.png" />
-    <Content Include="Images\PhotoCollage\desktop\gallery2.png" />
-    <Content Include="Images\PhotoCollage\desktop\gallery3.png" />
-    <Content Include="Images\PhotoCollage\desktop\gallery4.png" />
-    <Content Include="Images\PhotoCollage\desktop\gallery5.png" />
-    <Content Include="Images\PhotoCollage\desktop\gallery6.png" />
-    <Content Include="Images\PhotoCollage\desktop\gallery7.png" />
-    <Content Include="Images\PhotoCollage\desktop\menu.png" />
-    <Content Include="Images\PhotoCollage\desktop\photoPopup.png" />
-    <Content Include="Images\PhotoCollage\mobile\addPhotoPopup.png" />
-    <Content Include="Images\PhotoCollage\mobile\gallery1.png" />
-    <Content Include="Images\PhotoCollage\mobile\gallery2.png" />
-    <Content Include="Images\PhotoCollage\mobile\gallery3.png" />
-    <Content Include="Images\PhotoCollage\mobile\gallery4.png" />
-    <Content Include="Images\PhotoCollage\mobile\gallery5.png" />
-    <Content Include="Images\PhotoCollage\mobile\gallery6.png" />
-    <Content Include="Images\PhotoCollage\mobile\gallery7.png" />
-    <Content Include="Images\PhotoCollage\mobile\menu.png" />
-    <Content Include="Images\PhotoCollage\mobile\photoPopup.png" />
+    <Content Include="Images\Index\115A.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Index\115B.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Index\125A.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Index\135A.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Index\135B.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Index\PhotoCollage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\addPhotoPopup.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\gallery1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\gallery2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\gallery3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\gallery4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\gallery5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\gallery6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\gallery7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\menu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\desktop\photoPopup.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\addPhotoPopup.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\gallery1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\gallery2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\gallery3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\gallery4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\gallery5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\gallery6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\gallery7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\menu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PhotoCollage\mobile\photoPopup.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="PhotoCollage.png" />
     <Content Include="Scripts\bootstrap.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
