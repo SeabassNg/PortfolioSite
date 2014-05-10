@@ -93,5 +93,17 @@ namespace PortfolioSite.Controllers
             ViewBag.MobileGallery = mobileGallery;
             return View();
         }
+
+        public ActionResult SchoolFeedSettings()
+        {
+            ViewBag.ImagePath = @"/Images/SchoolFeedSettings";
+            ViewBag.Gallery = new List<String>()
+            {
+                "/gallery1.png",
+                "/gallery2.png",
+                "/gallery3.png"
+            };
+            return View();
+        }
     }
 }
