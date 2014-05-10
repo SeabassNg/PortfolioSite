@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\PeopleSearch\mobile\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +155,48 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\bootstrap.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Index\PeopleSearch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Index\SchoolFeedSettings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PeopleSearch\desktop\gallery9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\schoolFeedSettings\gallery1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\schoolFeedSettings\gallery2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\schoolFeedSettings\gallery3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Notes\notes_MAT_115A.pdf">
@@ -313,6 +356,8 @@
     <Content Include="Views\Projects\Math125A.cshtml" />
     <Content Include="Views\Projects\Math135A.cshtml" />
     <Content Include="Views\Projects\Math135B.cshtml" />
+    <Content Include="Views\Projects\PeopleSearch.cshtml" />
+    <Content Include="Views\Projects\SchoolFeedSettings.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

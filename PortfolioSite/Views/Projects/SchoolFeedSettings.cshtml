@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+<ul class="instructions list-inline gallery-list-modal">
+    @foreach (var image in @ViewBag.Gallery)
+    {
+        <li>
+            <div class="galleryThumbnails" style="background-image: url('@ViewBag.DesktopImagePath/@image')" data-toggle="modal" data-img-url="@ViewBag.DesktopImagePath/@image" />
+        </li>
+    }
+</ul>
+<p>
+    This feature was my first feature on schoolFeed. I built the first version
+    of this feature and it has been slightly revised since then. This feature
+    allows user to turn on and off different email, facebook synchronization, and
+    profile visit permissions. This feature also allows users to delete their
+    account easily. Before this feature existed, users must contact admins to
+    delete their account, so this feature made it easier for users and admins to
+    handle this task. This feature is built for both desktop and mobile platforms
+    to use. We support IE 8-11, Firefox, Chrome, and Opera. We also support mobile
+    Safari, mobile Chrome, mobile IE 10 and 11, and AOSP (tested on the Samsung
+    Galaxy 2 and 3 and HTC One). Screenshots are taken from the Pale Moon browser
+    (variation build of Firefox) and Lumia 920's IE 11.
+</p>
+<p>
+    The feature utilitizes PHP, javascript, jQuery, and CSS. This feature was
+    very heavy in CSS and javascript. The PHP was mostly there to listen to AJAX
+    calls for changing permissions and getting permissions or to construct the
+    initial page with the permissions retreieved.
+</p>
+<p>
+    This feature set up a framework for changing permissions for users. It will
+    eventually used in Classmates Photos as a starting point for building their
+    setting page. It was also copied over to the admin area, so that admins can
+    easily change user's permission.
+</p>
+<p>
+    To get to this feature,
+    <ul>
+        <li>Log into schoolFeed</li>
+        <li>
+            Click on the gear on the side and you will see a dropdown menu
+            like the one below
+            <ul class="list-inline gallery-list-modal">
+                <li>
+                    <div class="galleryThumbnails" style="background-image: url('/Images/schoolFeedSettings/gallery1.png')" data-toggle="modal" data-img-url="/Images/schoolFeedSettings/gallery1.png" />
+                </li>
+            </ul>
+        </li>
+        <li>Click on Settings</li>
+    </ul>
+</p>

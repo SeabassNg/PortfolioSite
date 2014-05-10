@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "schoolFeed - People Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+<ul class="instructions list-inline gallery-list-modal">
+    @foreach (var image in @ViewBag.DesktopGallery)
+    {
+        <li>
+            <div class="galleryThumbnails" style="background-image: url('@ViewBag.DesktopImagePath/@image')" data-toggle="modal" data-img-url="@ViewBag.DesktopImagePath/@image" />
+        </li>
+    }
+    @foreach (var image in @ViewBag.MobileGallery)
+    {
+        <li>
+            <div class="galleryThumbnails" style="background-image: url('@ViewBag.MobileImagePath/@image')" data-toggle="modal" data-img-url="@ViewBag.MobileImagePath/@image" />
+        </li>
+    }
+</ul>
+<p>
+    This feature allows users of schoolFeed to search for users within the app
+    and schools. Similar to Google, it will display some results on a dropdown
+    while you type. Clicking on user results will bring you to the user's
+    profile. Clicking on the school results will bring you to the school's
+    yearbook. The results are displayed in order of certain criteria such as
+    how similar is what you're typing to with the result itself, are you following
+    them, are they following you, and did you go to the same high school.
+    This feature is
+    built for both desktop and mobile platforms to use. We support IE 8-11,
+    Firefox, Chrome, and Opera. We also support mobile Safari, mobile Chrome,
+    mobile IE 10 and 11, and AOSP (tested on the Samsung Galaxy 2 and 3 and
+    HTC One). Screenshots are taken from the Pale Moon browser (variation build
+    of Firefox) and Lumia 920's IE 11.
+</p>
+<p>
+    The feature utilitizes MySQL, PHP, javascript, jQuery, jQuery autocomplete
+    plugin, Sphinx, and CSS. Sphinx does the searching of the results and the weighting. We
+    chose Sphinx for searching because
+    <ul>
+        <li>Lucene is extremely slow on PHP</li>
+        <li>
+            We wanted something that synced up with the MySQL db periodically, so
+            that new users and deleted users are in both MySQL db and Sphinx.
+            We found it easier to sync Sphinx with MySQL than Solr with MySQL.
+        </li>
+        <li>
+            While Solr is faster and is easier to write fuzzy searches and easier
+            to weight results, we found Sphinx's performance to be adequate and
+            eventually found a way to do fuzzy searches and weights that gave
+            adequate results.
+        </li>
+    </ul>
+    PHP retrieves the results from Sphinx and puts the results in JSON for AJAX calls.
+    The JQuery autocomplete plugin will retrieve this data via AJAX and display according
+    to the options on the webpage. The options I chose required retrieving the data
+    from the AJAX, displaying the data in different categories, the look of the dropdown
+    results itself. You can view the source code on the page.
+</p>
+<p>
+    My work with Sphinx and autocomplete eventually led to the rest of the site to
+    use Sphinx for searching for results. You will find this in places such as
+    searching for schools when you create your account, with searching for schools
+    when you create your account, and with searching for users for admins.
+</p>
+<p>
+    To get to this feature, log into <a href="http://schoolfeed.classmates.com">schoolFeed</a>
+    and go to the Search tab.
+</p>

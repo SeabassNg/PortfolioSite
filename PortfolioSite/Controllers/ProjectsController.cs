@@ -70,5 +70,28 @@ namespace PortfolioSite.Controllers
         {
             return View();
         }
-	}
+        
+        public ActionResult PeopleSearch()
+        {
+            String desktopImagePath = @"/Images/PeopleSearch/desktop",
+                   mobileImagePath = @"/Images/PeopleSearch/mobile";
+            var desktopGallery = new List<String>()
+            {
+                "/gallery1.png",
+                "/gallery2.png",
+                "/gallery3.png",
+                "/gallery4.png",
+                "/gallery5.png",
+                "/gallery6.png",
+                "/gallery7.png",
+                "/gallery8.png"
+            };
+            var mobileGallery = new List<String>();
+            ViewBag.DesktopImagePath = desktopImagePath;
+            ViewBag.DesktopGallery = desktopGallery;
+            ViewBag.MobileImagePath = mobileImagePath;
+            ViewBag.MobileGallery = mobileGallery;
+            return View();
+        }
+    }
 }
