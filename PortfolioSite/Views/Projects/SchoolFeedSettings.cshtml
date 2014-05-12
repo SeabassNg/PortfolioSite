@@ -7,7 +7,7 @@
     @foreach (var image in @ViewBag.Gallery)
     {
         <li>
-            <div class="galleryThumbnails" style="background-image: url('@ViewBag.DesktopImagePath/@image')" data-toggle="modal" data-img-url="@ViewBag.DesktopImagePath/@image" />
+            <div class="galleryThumbnails" style="background-image: url('@ViewBag.ImagePath/@image')" data-toggle="modal" data-img-url="@ViewBag.ImagePath/@image" />
         </li>
     }
 </ul>
